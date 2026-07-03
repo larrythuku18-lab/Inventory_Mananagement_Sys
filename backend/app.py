@@ -1,18 +1,4 @@
-"""
-Flask REST API for the inventory management system.
 
-Routes:
-    GET  /inventory        -> fetch all items
-    GET  /inventory/<id>   -> fetch a single item
-    POST /inventory        -> add a new item
-    PATCH  /inventory/<id> -> update fields on an item
-    DELETE /inventory/<id> -> remove an item
-
-External API routes (OpenFoodFacts):
-    GET  /external/product/<barcode> -> look up a product by barcode
-    GET  /external/search?name=...   -> search products by name
-    POST /inventory/<id>/enhance     -> fill missing item fields from the API
-"""
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
